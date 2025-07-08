@@ -82,8 +82,8 @@ public class UserControllerTest {
         .andExpect(status().isOk())
         .andExpect(view().name("Welcome"))
         .andExpect(forwardedUrl("Welcome"));
-	*/	
-	}
+		
+	}*/
 	@Test
 	public void welcomeTestHappyFlow() throws Exception{
 		mockMvc.perform(get("/welcome"))
